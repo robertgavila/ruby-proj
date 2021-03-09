@@ -11,6 +11,8 @@ def guess
   title1 = "We'll generate a random number and you guess what it is.\n"
   title2 = "  Enter a non-numeric to end program"
   prompt1 = "  Enter a number:  "
+  prompt2 = "This is a random number: "
+  
   
   puts "\n\n"
   puts title1
@@ -19,11 +21,27 @@ def guess
 
   a = gets.chomp!  
   puts "\n\n"
-  puts a
-  eixputs "\n\n"
+
+  puts (a.to_i > 0) && (a.to_i < 11) ? "Good" : "Nope"
+  puts "\n\n"
+  
+  # a.to_i
+  # a.Is_numeric   
+  
+  
+  
+  prng1 = rand(10)
+  puts prompt2
+  puts prng1.to_i
+  puts "\n\n"
+  
+  
+=begin
+  ALL OF THIS IS A COMMENT
+  THE TOP AND BOTTOM MUST BE PLACED
+  IN THE FIRST POSITION
+=end  
 end
-
-
 
 
 
